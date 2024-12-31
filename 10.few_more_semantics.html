@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics2</title>
+    <style type="text/css">
+        pre{
+            border: 1px solid black;
+            height: 120px;
+            width: 500px;
+        }
+
+        code{
+            color: red;
+        }
+        var{
+            color: blue;
+        }
+        samp{
+            color: gray;
+        }
+
+
+        details div{
+            background-color: gray;
+            color: white;
+            font-size: 18px;
+            padding: 12px;
+            font-family: Arial;
+        }
+
+
+        details span{
+            display: block;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            width: 110px;
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+
+        .indentation dt{
+            background-color: gray;
+            color: black;
+            padding: 5px;
+            width: 100px;
+        }
+
+
+        .brand-title{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .sticky dt{
+            background-color: black;
+            color: white;
+            padding: 15px;
+            width: 100px;
+            margin-left: 10px;
+            /*Fixing the position of an element*/
+            position: sticky;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--Working with code,var,samp elements-->
+            <!--Without-->
+        <pre>
+            #include&lt;stdio.h&gt;
+                int main()
+                {
+                    int height=100;
+                    int width=200;
+                    printf("Welcome to HTML....");
+                }
+        </pre>
+        
+            <!--With-->
+        <div>
+            <samp>Initialisation of Variables</samp>
+        </div>  
+        <code>
+            <pre>
+                #include&lt;stdio.h&gt;
+                    int main()
+                    {
+                        int <var>height</var>=100;
+                        int <var>width</var>=200;
+                        printf("Welcome to HTML....");
+                    }
+            </pre>
+        </code>
+
+
+    <!--Working with small and large text-->
+    <small>Krish</small>
+    <big>Krish</big>
+
+
+    <!--Working with details and summary eg.1-->
+        <!--Close-->
+    <details>
+        <summary>What is Netflix?</summary>
+        <div>
+            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+            You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+        </div>
+    </details>
+        <!--Open-->
+    <details open>
+        <summary>How much does Netflix cost?</summary>
+        <div>
+            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.
+        </div>
+    </details>
+
+    
+    <!--Working with details and summary eg.2-->
+    <details open>
+        <summary>WebDevelopment</summary>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Bootstrap</span>
+        <span>JS</span>
+    </details>
+    <details>
+        <summary>Java</summary>
+        <span>J2SE</span>
+        <span>JEE</span>
+        <span>ORM</span>
+        <span>Frameworks</span>
+    </details>
+
+
+    <!--Data list with terms and definitions-->
+    <dl class="indentation">
+        <dt>HTML</dt>
+        <dd>It is Markup Language</dd>
+        <dd>It is used for Presentation purpose</dd>
+        <dt>CSS</dt>
+        <dd>It is a Styling Language</dd>
+        <dt>Javascript</dt>
+        <dd>It is a Scripting Language</dd>
+    </dl>
+
+
+    <!--Making Content Sticky-->
+    <div class="brand-title">Shopper.</div>
+    <nav>
+        <dl class="sticky">
+            <dt>Electronics</dt>
+            <dd>TV</dd>
+            <dd>Mobile</dd>
+            <dd>Laptop</dd>
+            <dd>Watches</dd>
+            <dd>Speakers</dd>
+            <dd>Airpods</dd>
+            <dd>TV</dd>
+            <dd>Mobile</dd>
+            <dd>Laptop</dd>
+            <dd>Watches</dd>
+            <dd>Speakers</dd>
+            <dd>Airpods</dd>
+            <dd>TV</dd>
+            <dd>Mobile</dd>
+            <dd>Laptop</dd>
+            <dd>Watches</dd>
+            <dd>Speakers</dd>
+            <dd>Airpods</dd>
+            <dd>TV</dd>
+            <dd>Mobile</dd>
+            <dd>Laptop</dd>
+            <dd>Watches</dd>
+            <dd>Speakers</dd>
+            <dd>Airpods</dd>
+
+    
+            <dt>FashionWear</dt>
+            <dd>Kids</dd>
+            <dd>Men</dd>
+            <dd>Women</dd>
+            <dd>Kids</dd>
+            <dd>Men</dd>
+            <dd>Women</dd>
+            <dd>Kids</dd>
+            <dd>Men</dd>
+            <dd>Women</dd>
+            <dd>Kids</dd>
+            <dd>Men</dd>
+            <dd>Women</dd>
+            <dd>Kids</dd>
+            <dd>Men</dd>
+            <dd>Women</dd>
+            <dd>Kids</dd>
+            <dd>Men</dd>
+            <dd>Women</dd>
+            <dd>Kids</dd>
+            <dd>Men</dd>
+            <dd>Women</dd>
+            <dd>Kids</dd>
+            <dd>Men</dd>
+            <dd>Women</dd>
+            <dd>Kids</dd>
+            <dd>Men</dd>
+            <dd>Women</dd>
+            <dd>Kids</dd>
+            <dd>Men</dd>
+            <dd>Women</dd>
+            <dd>Kids</dd>
+            <dd>Men</dd>
+            <dd>Women</dd>
+            <dd>Kids</dd>
+            <dd>Men</dd>
+            <dd>Women</dd>
+            <dd>Kids</dd>
+            <dd>Men</dd>
+            <dd>Women</dd>
+            <dd>Kids</dd>
+            <dd>Men</dd>
+            <dd>Women</dd>
+            <dd>Kids</dd>
+            <dd>Men</dd>
+            <dd>Women</dd>
+
+    
+            <dt>Footwear</dt>
+            <dd>Sneakers</dd>
+            <dd>Casuals</dd>
+            <dd>Loafers</dd>
+            <dd>Sneakers</dd>
+            <dd>Casuals</dd>
+            <dd>Loafers</dd>
+            <dd>Sneakers</dd>
+            <dd>Casuals</dd>
+            <dd>Loafers</dd>
+            <dd>Sneakers</dd>
+            <dd>Casuals</dd>
+            <dd>Loafers</dd>
+            <dd>Sneakers</dd>
+            <dd>Casuals</dd>
+            <dd>Loafers</dd>
+            <dd>Sneakers</dd>
+            <dd>Casuals</dd>
+            <dd>Loafers</dd>
+            <dd>Sneakers</dd>
+            <dd>Casuals</dd>
+            <dd>Loafers</dd>
+            <dd>Sneakers</dd>
+            <dd>Casuals</dd>
+            <dd>Loafers</dd>
+            <dd>Sneakers</dd>
+            <dd>Casuals</dd>
+            <dd>Loafers</dd>
+            <dd>Sneakers</dd>
+            <dd>Casuals</dd>
+            <dd>Loafers</dd>
+            <dd>Sneakers</dd>
+            <dd>Casuals</dd>
+            <dd>Loafers</dd>
+        </dl>
+    </nav>
+    
+
+</body>
+</html>

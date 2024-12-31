@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetFlix</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style type="text/css">
+        body{
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: Arial;
+        }
+        .bgblur{
+            background-color: rgba(0,0,0,0.5);
+            height: 100vh;
+            width: 100vw;
+            margin: -8px;
+            
+        }
+        .top{
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .brand-title{
+            color: red;
+            text-transform: uppercase;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .btn-sign-in{
+            border-radius: 2px;
+            background-color: red;
+            font-size: 15px;
+            padding: 2px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body background="public/images/netflix-background-image-6.jpg">
+    <header>
+        <div class="bgblur">
+            <div class="top">
+                <span class="brand-title">NetFlix</span>
+                <span>
+                    <span class="bi bi-translate"></span>
+                    <span>Language</span>
+                    <span class="btn-sign-in">Sign In</span>
+                </span>
+            </div>
+            
+            <section>
+                <div>
+                    <div>Unlimited movies,</div>
+                    <div>TV shows and more</div>
+                </div>
+            </section>
+        </div>
+    </header>
+    
+</body>
+</html>

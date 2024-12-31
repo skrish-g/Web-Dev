@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        dl{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        fieldset{
+            background-image: url(public/images/360_F_191724216_CJMKL3xiH5tPoqYoU4RYFN3YITGHdSHg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 500px;
+            border-radius: 15px;
+            box-shadow: 12px 12px 5px black;
+            margin-bottom: 30px;
+        }
+        dt{
+            background-color: black;
+            color: white;
+            margin: 5px;
+            padding: 5px;
+            width: 120px;
+        }
+        dd{
+            background-color: white;
+            margin: 5px;
+            padding: 5px;
+            width: 150px;
+            margin-right: 150px;
+        }
+        legend{
+            text-align: center;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Person details</legend>
+            <dl>
+                <dt>FirstName</dt>
+                <dd>SomeName</dd>
+                <dt>LastName</dt>
+                <dd>SomeName</dd>
+                <dt>Age</dt>
+                <dd>SomeAge</dd>
+            </dl>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Contact details</legend>
+            <dl>
+                <dt>City</dt>
+                <dd>SomeCity</dd>
+                <dt>State</dt>
+                <dd>SomeState</dd>
+                <dt>PostalCode</dt>
+                <dd>Somepostalcode</dd>
+            </dl>
+        </fieldset>
+    </div>
+</body>
+</html>

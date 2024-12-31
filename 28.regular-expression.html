@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        
+    </style>
+</head>
+<body>
+    <!--Working with Meta Character "?|*|+"-->
+    <form>
+        <input type="text" name="txtColor" placeholder="Color|Colour|Colouur|Colouuur" 
+                        pattern="Colou+r">
+        <button>Submit</button>
+    </form>
+
+    <!--Working with Meta Character ".(dot)"-->
+    <form>
+        <input type="text" name="txtColor" placeholder="boy|boy" 
+                        pattern="b.y">
+        <button>Submit</button>
+    </form>
+
+    <!--Working with Meta Character "\"-->
+    <form>
+        <input type="text" name="txtColor" placeholder="+9110digitnumber" 
+                        pattern="\+919998887776">
+
+        <input type="text" name="txtColor" placeholder="sachin@gmail.com" 
+                        pattern="sachin@gmail\.com">                
+        <button>Submit</button>
+    </form>
+
+    <!--Working with Meta Character "|(pipe)"-->
+    <form>
+        <input type="text" name="txtColor" placeholder="red|green|blue" 
+                        pattern="red|green|blue">
+
+        <input type="text" name="txtColor" placeholder="this|that|the" 
+                        pattern="th(is|at|e)">                
+        <button>Submit</button>
+    </form>
+
+    <!--Working with Meta Character "^(exclude_specified)"-->
+    <form>
+        <input type="text" name="txtColor" placeholder="except a|d|s" 
+                        pattern="[^a,d,s]">
+        <button>Submit</button>
+    </form>
+
+    <!--Working with Meta Character "[](range_of_characters)"-->
+    <form>
+        Range of characters:<br>
+        <input type="text" name="txtColor" placeholder="a|d|s" 
+                        pattern="[a,d,s]"><br>
+        <input type="text" name="txtColor" placeholder="a-z|A-Z" 
+                        pattern="[a-z,A-Z]"><br>
+        <input type="text" name="txtColor" placeholder="0-9" 
+                        pattern="[0-9]"><br>
+        <input type="text" name="txtColor" placeholder="Alphanumeric" 
+                        pattern="[a-z,A-Z,0-9]"><br>
+        <input type="text" name="txtColor" placeholder="a-d|4-9" 
+                        pattern="[a-d,4-9]"><br>
+        <input type="text" name="txtColor" placeholder="except A-Z" 
+                        pattern="[^A-Z]"><br>
+        <input type="text" name="txtColor" placeholder="except A-Z" 
+                        pattern="\w(?=.*[A-Z])"><br>
+        <button>Submit</button>
+    </form>
+
+
+
+
+
+    <!--Working with Meta Character Shortcuts-->
+    <form>
+        Shortcuts:<br>
+        <input type="text" name="txtColor" placeholder="+91-999-8888-777" 
+                        pattern="\+91-[6-9]\d{2}-\d{4}-\d{3}" required>
+                        
+        <input type="text" name="txtColor" placeholder="+(1)(425) 555-0100" 
+                        pattern="\+\(1\)\([1-9]{3}\)\s\d{3}-\d{4}" required>
+        
+        <input type="text" name="txtColor" placeholder="+(44)(20)1234 5678" 
+                        pattern="\+\(44\)\([1-9][0-9]\)\d{4}\s\d{4}" required>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Linking bootstrap icons css file-->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!--Writing our own css code-->
+    <style type="text/css">
+
+        header{
+            font-size: 15px;
+            font-family: Arial;
+            
+            /* Adjusting the elements : inline */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+
+        #data{
+            margin-right: 8px;
+        }
+
+        #icons{
+            margin-right: 5px;
+            
+        }
+        .brand-title{
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .count{
+            background-color: red;
+            color: white;
+
+            /*adjusting the dimension for span element*/
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 25px;
+        }
+
+       .flash-sale{
+        margin-top: 25px;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+       }
+
+       .bi-lightning-fill{
+        color: goldenrod;
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand-title">
+            <span>Shopper.</span>
+         </div>
+
+        <div id="data">
+            <span>Home</span>
+            <span>Catalog</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blog</span>
+            <span>Docs</span>
+        </div>
+
+        <div id="icons">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart">
+                <span class="count">2</span>
+            </span>
+           </div>
+           
+    </header>
+    <div class="flash-sale">
+        <marquee>
+            <article>
+                <span class="bi bi-lightning-fill"></span>
+                <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
+                <span class="bi bi-lightning-fill"></span>
+               </article>
+        </marquee>
+        
+       </div>
+</body>
+</html>

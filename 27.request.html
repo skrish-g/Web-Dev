@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        form{
+            border: 1px dotted brown;
+            margin: 10px;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <!--Input elements-->
+        <dl>
+            <dt>Pan Number</dt>
+            <dd>
+                <input type="text" value="FMIV247MS8" readonly name="pannumber">
+            </dd>
+            <dt>User Name</dt>
+            <dd>
+                <input type="text" value="Kohli" name="username">
+            </dd>
+            <dt>Gender</dt>
+            <dd>
+                <input type="text" value="Male" name="gender">
+            </dd>
+        </dl>
+        <button>Submit</button>
+        <button type="reset">Cancel</button>
+    </form>
+
+    <form>
+        <!--Input elements-->
+        <dl>
+            <dt>Pan Number</dt>
+            <dd>
+                <input type="text" name="pannumber" required autofocus>
+            </dd>
+            <dt>User Name</dt>
+            <dd>
+                <input type="text" name="username" maxlength="20">
+            </dd>
+            <dt>Gender</dt>
+            <dd>
+                <input type="text" name="gender" minlength="1">
+            </dd>
+        </dl>
+        <button>Submit</button>
+        <button type="reset">Cancel</button>
+    </form>
+
+    <form align="center">
+        <h1>Google</h1>
+        <input type="text" id="search" size="50" list="options" placeholder="Oye">
+        <datalist id="options">
+            <option>HTML Examples</option>
+            <option>CSS Examples</option>
+            <option>JavaScript Examples</option>
+            <option>HTML Projects</option>
+            <option>CSS Projects</option>
+            <option>JavaScript Projects</option>
+        </datalist>
+        <p>
+            <button>Search</button>
+        </p>
+        
+    </form>
+</body>
+</html>
