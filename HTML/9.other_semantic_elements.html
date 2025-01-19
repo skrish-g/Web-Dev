@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+    <style type="text/css">
+        figure div{
+            border: 1px dotted red;
+            height: 100px;
+            width: 200px;
+            
+        }
+        figure{
+            border: 1px solid black;
+            height: 200px;
+            width: 300px;
+            padding: 60px;
+        }
+        img{
+            height: 100px;
+            width: 200px;
+        }
+        figcaption{
+            margin-left: 60px;
+            font-weight: bold;
+        }
+
+        pre{
+            border: 1px solid black;
+            height: 100px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!--Working with dialog-->
+    <dialog open>
+        Use here.....
+    </dialog>
+
+
+    <!--Working with figure and figcaption-->
+    <figure>
+        <div>
+            <img src="public/images/car.jpeg" alt="width">
+        </div>
+        <figcaption>Car Image</figcaption>
+    </figure>
+
+
+    <!--Working with Blank Spaces & < > symbols-->
+            <!--Without-->
+        <div>H    T ML</div>
+
+        <div> <Krish> </div>
+            <!--With-->
+        <div>H&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;M&nbsp;L</div>
+
+        <div> &lt;Krish&gt;</div>
+
+
+    <!--Working with Pre-Formatted Text-->
+        <!--Without-->
+    <div>
+        #include&lt;stdio.h&gt;
+        int main()
+        {
+            printf("Welcome to C Programming");
+        }
+    </div>
+        <!--With-->
+    <pre>
+        #include&lt;stdio.h&gt;
+        int main()
+        {
+            printf("Welcome to C Programming");
+        }
+    </pre>
+</body>
+</html>

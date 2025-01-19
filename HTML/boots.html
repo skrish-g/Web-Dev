@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style type="text/css">
+        fieldset{
+            width: 300px;
+        }
+        li{
+            list-style: none;
+        }
+        li span{
+            padding: 5px;
+        }
+
+        .error-field{
+            color: red;
+        }
+        form{
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Your Comments</legend>
+        <form>
+            <textarea name="address" id="" rows="20" cols="30">
+                
+            </textarea><br><br>
+            <textarea name="address" id="" rows="20" cols="30">
+                Terms of Conditions
+                </textarea>
+        <button>Submit</button>
+        </form>
+    </fieldset>
+    
+
+
+    <ul>
+        
+        <li>
+            <span>5</span>
+            <span class="bi bi-star-fill"></span>
+            <span>
+                <meter value="70" optimum="80" low="0" high="100"></meter>
+            </span>
+            <span>92,708</span>
+        </li>
+        <li>
+            <span>5</span>
+            <span class="bi bi-star-fill"></span>
+            <span>
+                <meter value="70" optimum="80" low="0" high="100"></meter>
+            </span>
+            <span>92,708</span>
+        </li>
+        <li>
+            <span>5</span>
+            <span class="bi bi-star-fill"></span>
+            <span>
+                <meter value="70" optimum="80" low="0" high="100"></meter>
+            </span>
+            <span>92,708</span>
+        </li>
+        <li>
+            <span>5</span>
+            <span class="bi bi-star-fill"></span>
+            <span>
+                <meter value="70" optimum="80" low="0" high="100"></meter>
+            </span>
+            <span>92,708</span>
+        </li>
+        <li>
+            <span>5</span>
+            <span class="bi bi-star-fill"></span>
+            <span>
+                <meter value="70" optimum="80" low="0" high="100"></meter>
+            </span>
+            <span>92,708</span>
+        </li>
+    </ul>
+
+    <form>
+        <div>
+            <span class="bi bi-person-fill"></span>
+        <span>User Login</span>
+        </div>
+        
+        <div>
+            <!--Working with Username-->
+            <label for="username">Username</label><br>
+            <div>
+                <input type="text" name="username"><br>
+                <span class="error-field">Invalid Username</span>
+            </div>
+        </div>
+
+        <!--Working with Password-->
+        <div>
+            <label>Password</label><br>
+            <input type="text"><br>
+            <div>
+                <span class="error-field">Invalid Password</span>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

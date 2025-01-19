@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <!-- Dynamic Pseudo Classes -->
+                    <!-- For Eg.-1 -->
+        <!-- Without ready made classes, we are working with "JavaScript" [User-Defined] -->
+    <script type="text/javascript">
+        function seteffect(){
+            //  Logic of a function
+            console.log("Control entering into setEffect function")
+            document.querySelector("h1").style.color="red";
+            document.querySelector("h1").style.fontFamily="Brush Script MT";
+            console.log("Control leaving into setEffect function")
+        }
+
+        function reseteffect(){
+            //  Logic of a function
+            console.log("Control entering into resetEffect function")
+            document.querySelector("h1").style.color="Black";
+            document.querySelector("h1").style.fontFamily="Arial";
+            console.log("Control leaving into resetEffect function")
+        }
+    </script>
+
+        <!-- Same thing, Working with Inheritance Operator(:) [Pre-Defined]-->
+    <style type="text/css">
+        h2:hover{
+            color: green;
+            font-family: Brush Script MT;
+            font-weight: lighter;
+        }
+    </style>
+
+        <!-- For Eg.-2 -->
+    <style type="text/css">
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            transition: 2s;
+        }
+        img:active{
+            width: 400px;
+            height: 400px;
+            transition: 4s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Eg.-1 -->
+    <h1 onmouseover="seteffect()" onmouseout="reseteffect()">Welcome to CSS</h1>
+    <h2>CSS is used for styling</h2>
+
+    <!-- Eg.-2 -->
+    <div>
+        <img src="../../HTML/public/images/flipkart.jpeg" alt="">
+    </div>
+</body>
+</html>

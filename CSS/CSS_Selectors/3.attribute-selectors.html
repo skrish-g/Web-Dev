@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Attribute Selectors -->
+    <style type="text/css">
+        input[type="button"]{
+            background-color: yellow;
+        }
+        p[id]{
+            color: red;
+        }
+        img[width]{
+            display: none;
+        }
+        p[class^="Effects"]{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Eg.-1 -->
+    <dl>
+        <dt>Username</dt>
+        <dd>
+            <input type="text" name="txtUsername">
+        </dd>
+        <dt>Password</dt>
+        <dd>
+            <input type="text" name="txtPassword">
+        </dd>
+    </dl>
+    <input type="button" value="Submit">
+    <input type="button" value="Reset">
+
+    <!-- Eg.-2 -->
+    <p>para-1</p>
+    <p id="p1">para-2</p>
+    <p>para-3</p>
+    <p id="p2">para-4</p>
+    
+    <!-- Eg.-3 -->
+    <img><br>
+    <img><br><img width="200" height="200">
+    <img><br>
+    <img><br>
+
+    <!-- Eg.-4 -->
+    <p class="Effects">Para-1</p>
+    <p class="ParaEffects">Para-2</p>
+    <p class="EffectsPara">Para-3</p>
+    <p class="Para-Effects">Para-4</p>
+    <p class="Effects-Para">Para-5</p>
+    <p class="Effects Para">Para-6</p>
+    <p class="Para Effects text">Para-7</p>
+    <p class="Effects-div">Para-8</p>
+</body>
+</html>

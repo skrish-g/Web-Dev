@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style type="text/css">
+        textarea:disabled{
+            cursor: not-allowed; 
+        }
+        textarea:read-only{
+            cursor: ;
+            background-color: lightblue;
+        }
+        input+span{
+            color: red;
+        }
+        
+        }
+        .terms~button:{
+            display: none;
+        }
+        .terms+span:checked{
+            color: green;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <dl class="m-4">
+        <dt>Text Area</dt>
+        <dd>
+            <textarea name="" id="" rows="4" cols="40" disabled>
+                Our terms and Condition
+            </textarea>
+        </dd>
+    </dl>
+
+    <dl class="m-4">
+        <dt>Text Area</dt>
+        <dd>
+            <textarea name="" id="" rows="4" cols="40" readonly>
+                Our terms and Condition
+            </textarea>
+        </dd>
+    </dl>
+
+    <div >
+        <input type="checkbox" class="terms">
+        <span>&nbsp; I Accept</span>
+        <br><br>
+        <button class="btn btn-primary">Submit</button>
+    </div>
+    
+
+    
+</body>
+</html>

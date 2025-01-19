@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        ul{
+            list-style: none;
+            border: 1px solid red;
+            height: 60px;
+            width: 150px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+
+        <!--Working with PASSWORD Input-->
+        <form>
+            Password<input type="password" name="txtPwd" minlength="4" maxlength="15"
+                        pattern="[A-Z]{4,10}"><br>
+            <button>Submit</button>
+            -----------------------------------------------------------
+        </form>
+
+        <!--Working with NUMBER (DESCRETE) Input-->
+        <form>
+            <label for="">Age</label>
+            <input type="number" name="age" id="" min="19" max="60" step="5"><br>
+            <button>Submit</button>
+            -----------------------------------------------------------
+        </form>
+    
+        <!--Working with NUMBER (CONTINUOUS) Input-->
+        <form>
+            <label for="">Salary Increment</label>
+            <input type="number" name="sal" id="" min="3.5" max="30.5" step="0.1"><br>
+            <button>Submit</button>
+            -----------------------------------------------------------
+        </form>
+
+        <!--Working with RANGE Input-->
+        <form>
+            <label for="">EMI</label>
+            <input type="range" name="emi" min="1000" max="10000" value="7000"><br>
+            <button>Submit</button>
+            -----------------------------------------------------------
+        </form>
+
+        <!--Working with EMAIL Input-->
+        <form>
+            <label for="">EMAIL</label>
+            <input type="email" name="email" id=""><br>
+            <button>Submit</button>
+            -----------------------------------------------------------
+        </form>
+
+        <!--Working with URL Input-->
+        <form>
+            <label for="">ENTER URL</label>
+            <input type="url" name="urldetails" id=""><br>
+            <button>Submit</button>
+            -----------------------------------------------------------
+        </form>
+    </pre>
+
+    <!--Working with COLOR Input-->
+    <form>
+        <div>
+            <figure>
+                <img src="public/images/one-plus.webp" height="300">
+                <figcaption>
+                    <input type="color" name="blu" value="#0080ff">
+                    <input type="color" name="red" value="#ff0000">
+                    <input type="color" name="blck" value="#000000">
+                </figcaption>
+            </figure>
+        </div>
+        <button>Submit</button><br>
+        -----------------------------------------------------------
+    </form> <br>
+
+    <!--Working with DATE Input-->
+    <form align="center">
+        <label for="">Choose Date of Travel</label>
+        <input type="date" name="txtDate" id="" min="2024-12-12" max="2025-02-12"><br>
+        <button>Submit</button><br><br>
+        -----------------------------------------------------------
+    </form>
+    
+    <!--Working with FILE Input-->
+    <form align="center">
+        <label for="">Choose</label>
+        <input type="file" name="txtFile" multiple accept=".png"><br>
+        <button>Submit</button><br><br>
+        -----------------------------------------------------------
+    </form>
+
+    <!--Working with RADIO Input-->
+    <form align="center">
+        <label for="">Choose Gender</label>
+        <input type="radio" name="gender" value="Male" checked>Male
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="Other">Other<br>
+        <button>Submit</button><br><br>
+        -----------------------------------------------------------
+    </form>
+
+    <form align="center">
+        <label for="">Choose Ur Graduation</label>
+        <input type="checkbox" name="degree1" value="SSLC">SSLC
+        <input type="checkbox" name="degree2" value="PUB">PUB
+        <input type="checkbox" name="degree3" value="Degree">Degree
+        <input type="checkbox" name="degree4" value="Masters">Masters<br>
+        <button>Submit</button><br><br>
+        -----------------------------------------------------------
+    </form>
+
+    <form>
+        <h4>Select courses</h4>
+        <ul>
+            <li>
+                <input type="checkbox"><label>HTML</label> 
+            </li>
+            <li>
+                <input type="checkbox"><label>CSS</label> 
+            </li>
+            <li>
+                <input type="checkbox"><label>JS</label> 
+            </li>
+            <li>
+                <input type="checkbox"><label>jQuery</label>
+            </li>
+            <li>
+                <input type="checkbox"><label>React</label> 
+            </li>
+            <li>
+                <input type="checkbox"><label>Node.js</label> 
+            </li>
+        </ul>
+        <button>Submit</button><br><br>
+        -----------------------------------------------------------
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Technologies</legend>
+            <select name="web">
+
+                <option>SELECT YOUR COURSE</option>
+
+                <optgroup name="UI" label="UI">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS" disabled>CSS</option>
+                    <option value="Bootstrap">Bootstrap</option>
+                    <option value="Javascript">Javascript</option>
+                </optgroup>
+
+                <optgroup name="Backend" label="Backend">
+                    <option value="">CoreJava</option>
+                    <option value="">AdvancedJava</option>
+                    <option value="">ORM</option>
+                    <option value="">Framework</option>
+                </optgroup>
+
+                <optgroup name="AB" label="AB">
+                    <option value="">Devops</option>
+                    <option value="">AWS</option>
+                </optgroup>
+            </select><br><br>
+            <button>Submit</button>
+        </fieldset>
+        
+    </form>
+
+
+    <form>
+        <fieldset>
+            <legend>Technologies</legend>
+            <select name="web" size="7" multiple>
+
+                <option>SELECT YOUR COURSE</option>
+
+                <optgroup name="UI" label="UI">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Bootstrap">Bootstrap</option>
+                    <option value="Javascript">Javascript</option>
+                </optgroup>
+
+                <optgroup name="Backend" label="Backend">
+                    <option value="">CoreJava</option>
+                    <option value="">AdvancedJava</option>
+                    <option value="">ORM</option>
+                    <option value="">Framework</option>
+                </optgroup>
+
+                <optgroup name="AB" label="AB">
+                    <option value="">A</option>
+                    <option value="">B</option>
+                </optgroup>
+            </select><br><br>
+            <button>Submit</button>
+        </fieldset>
+        
+    </form>
+</body>
+</html>

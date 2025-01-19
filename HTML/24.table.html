@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <!-- Using CSS Selectors (7.Structural Pseudo Classes) -->
+    <style>
+        tbody tr:first-child{
+            color: green;
+        }
+        tbody tr:last-child{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <table border="3" background="public/images/Amazon banner.jpg">
+        <caption>Asia Cup</caption>
+        <thead>
+            <th>Pos</th>
+            <th>Teams</th>
+            <th>Matches</th>
+            <th>Won</th>
+            <th>Lost</th>
+            <th>Tied</th>
+            <th>NR</th>
+            <th>Points</th>
+            <th>NRR</th>
+            <th>Series Form</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>India</td>
+                <td>3</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>+4.99</td>
+                <td>6</td>
+                <td>+3.99</td>
+                <td>
+                    <span>W</span>
+                    <span>W</span>
+                    <span>W</span>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pakistan</td>
+                <td>3</td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+                <td>-4.99</td>
+                <td>0</td>
+                <td>-3.99</td>
+                <td>
+                    <span>L</span>
+                    <span>L</span>
+                    <span>L</span>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Bangladesh</td>
+                <td>3</td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+                <td>-5.99</td>
+                <td>0</td>
+                <td>-3.99</td>
+                <td>
+                    <span>L</span>
+                    <span>L</span>
+                    <span>L</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

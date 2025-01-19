@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Rational Selectors -->
+    <style type="text/css">
+        /* Only direct child elements */
+        .container>p{
+            color: red;
+            font-family: brush script mt;
+        }
+        /* Adjacent (Sibling) */
+        span+img{
+            border: 3px dotted green;
+            width: 200px;
+            height: 200px;
+        }
+        /* Generic Sibling */
+        span~p{
+            font-family: brush script mt;
+            color: goldenrod;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Eg.-1 -->
+    <div class="container">
+        <p>para-1</p>
+        <p>para-2</p>
+        <span>
+            <p>para-3</p>
+        </span>
+        <p>para-4</p>
+    </div>
+    <p>para-5</p>
+
+    <!-- Eg.-2 -->
+    <div class="subcontainer">
+        <span>Hello User</span>
+            <!-- Targeted img element -->
+        <img src="../../HTML/public/images/appl3.jpg" alt="image not found">
+            <!-- Non Targeted img element -->
+        <img src="../../HTML/public/images/appl3.jpg" alt="image not found">
+        <h1>Welcome to web</h1>
+        <p>Para-6</p>
+        <p>Para-7</p>
+    </div>
+
+    
+</body>
+</html>
