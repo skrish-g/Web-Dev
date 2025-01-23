@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .container{
+            border: 2px dotted goldenrod;
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            font-size: 35px;
+            text-shadow: 1px 2px green;
+            font-family: brush script mt;
+        }
+        /* Appling Explicitly */
+        p{
+            all: inherit; /* Appling Explicitly */
+            width: 250px; /* Overriding */
+            color: red; /* special properties */
+            border: unset;
+            
+        }
+        img{
+            margin: 5px;
+            border: 3px solid black;
+        }
+        h3{
+            font-family: initial;
+            color: initial;
+            font-size: initial;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Welcome to CSS</h3>
+        <p>Formatting HTML with styles</p>
+        <img src="../../HTML/public/images/amazon.png" alt="">
+    </div>
+</body>
+</html>
