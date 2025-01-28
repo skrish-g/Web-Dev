@@ -15,9 +15,41 @@
         img[width]{
             display: none;
         }
+        /* Starts with --> */
+
         p[class^="Effects"]{
             color: blue;
         }
+
+        /* Ends with --> */
+
+        /* p[class$="Effects"]{
+            color: blue;
+        } */
+
+        /* Exact --> */
+
+        /* p[class="Effects"]{
+            color: blue;
+        } */
+
+        /* Contains (but separated) --> */
+
+        /* p[class~="Effects"]{
+            color: blue;
+        } */
+
+        /* Contains or with -(hyphens) --> */
+
+        /* p[class|="Effects"]{
+            color: blue;
+        } */
+
+        /* Any Location (without any condition) --> */
+        
+        /* p[class*="Effects"]{
+            color: blue;
+        } */
     </style>
 </head>
 <body>

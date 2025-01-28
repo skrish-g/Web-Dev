@@ -22,11 +22,11 @@
         p::selection{
             background-color: yellow;
             color: red;
-            font-size: 45px;
+            margin: 10px; font-size: 45px; /* Properties doesn't work(Bcoz Not in rule) */
             text-shadow: 6px 8px 1px blue;
             content: "hgtghb";
         }
-        img::selection{
+        img::selection{    /* ::Selection not applied bcoz it's not a selectable text containing element */
             color: red;
         }
         input::selection{

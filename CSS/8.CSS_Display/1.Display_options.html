@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <h1 style="display: none;" id="displayNone">Display option : display:none</h1>
+    <img src="../../HTML/public/images/appl2.jpg" alt="" width="200" height="200">
+    <br><br>
+    <hr>
+    <h1 style="visibility: hidden;" id="visibilityHidden">Display option : visibility: hidden</h1>
+    <img src="../../HTML/public/images/appl2.jpg" alt="" width="200" height="200">
+
+    <script type="text/javascript">
+        var displayNone = document.getElementById("displayNone");
+        var visibilityHidden = document.getElementById("visibilityHidden");
+
+        // See output on console screen
+
+        console.log("Is display:none available in DOM ::", displayNone ? "Yes" : "No");
+        console.log("Is visibility:hidden available in DOM ::", visibilityHidden ? "Yes" : "No");
+
+        console.log("In display:none height information :: ", displayNone.offsetHeight);
+        console.log("In visibility:hidden height information :: ", visibilityHidden.offsetHeight);
+    </script>
+
+
+
+    <br><br>
+    <hr>
+    <em>Italic</em>
+
+</body>
+</html>
