@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style type="text/css">
+        .disabled{
+            cursor: no-drop;
+        }
+
+        .active{
+            cursor: progress;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <!-- With Button Element-->
+    <ul class="pagination pagination-sm mt-3 d-flex justify-content-center">
+        <li class="page-item">
+            <button class="page-link">&laquo;</button>
+        </li>
+        <li class="page-item">
+            <button class="page-link">1</button>
+        </li>
+        <li class="page-item disabled">
+            <button class="page-link">2</button>
+        </li>
+        <li class="page-item">
+            <button class="page-link">3</button>
+        </li>
+        <li class="page-item active">
+            <button class="page-link">4</button>
+        </li>
+        <li class="page-item">
+            <button class="page-link">5</button>
+        </li>
+        <li class="page-item">
+            <button class="page-link">&raquo;</button>
+        </li>
+    </ul>
+
+    <br><br><br>
+
+    <!-- With Anchor Element -->
+    <ul class="pagination pagination-lg mt-3 d-flex justify-content-center">
+        <li class="page-item">
+            <a class="page-link">&laquo;</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link">1</a>
+        </li>
+        <li class="page-item disabled">
+            <a class="page-link ">
+                <span>2</span>
+            </a>
+        </li>
+        <li class="page-item">
+            <a class="page-link">3</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link active">4</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link">5</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link">&raquo;</a>
+        </li>
+
+    </ul>
+
+    <!-- Functionality code for jQuery -->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
