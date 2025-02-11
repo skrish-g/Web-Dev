@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /* @media screen and (width>=600px){
+            span{
+                border: 1px solid black;
+                padding: 2px;
+            }
+        }
+        @media screen and (width<600px){
+            nav{
+                display: flex;
+                flex-direction: column;
+            }
+            span{
+                border: 1px solid black;
+                padding: 2px;
+                width: 100px;
+                margin-bottom: 3px;
+            }
+        } */
+
+
+        @media screen and (min-width: 600px){
+            span{
+                border: 1px solid black;
+                padding: 2px;
+            }
+        }
+        @media screen and (max-width: 599px){
+            nav{
+                display: flex;
+                flex-direction: column;
+            }
+            span{
+                border: 1px solid black;
+                padding: 2px;
+                width: 100px;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span>Home</span>
+        <span>Blog</span>
+        <span>Contact</span>
+        <span>About Us</span>
+        <span>Pages</span>
+    </nav>
+</body>
+</html>
