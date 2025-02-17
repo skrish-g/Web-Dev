@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid bg-danger">
+    <header>
+        <img src="../HTML/public/images/kfctop.png" alt="" class="w-100">
+    </header>
+    <nav class="w-100">
+        <div class="accordion" id="kfc">
+            <!-- First Accordion Item -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button data-bs-toggle="collapse" data-bs-target="#electronics" class="btn btn-danger w-100">
+                        Customer Details
+                    </button> 
+                </div>
+                <div id="electronics" class="accordion-collapse collapse" data-bs-parent="#kfc">
+                    <div class="accordion-body"> 
+                       <ul class="list-unstyled">
+                        <li>
+                            <label for="">Customer Name</label><br>
+                            <input type="text" class="form-control">
+                        </li>
+                        <li>
+                            <label for="">Mobile Number</label><br>
+                            <input type="text" class="form-control">
+                        </li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Second Accordion Item -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button data-bs-toggle="collapse" data-bs-target="#electronics1" class="btn btn-danger w-100">
+                        Select your Meal
+                    </button> 
+                </div>
+                <div id="electronics1" class="accordion-collapse collapse" data-bs-parent="#kfc">
+                    <div class="accordion-body w-100"> 
+                       <div class="d-flex flex-row justify-content-around">
+                        <img src="../HTML/public/images/omgb1.png" alt="" class="w-25">
+                        <img src="../HTML/public/images/omgb2.png" alt="" class="w-25">
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Accordion Item -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button data-bs-toggle="collapse" data-bs-target="#electronics3" class="btn btn-danger w-100">
+                        Select ADD on's
+                    </button> 
+                </div>
+                <div id="electronics3" class="accordion-collapse collapse show" data-bs-parent="#kfc">
+                    <div class="accordion-body w-100">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div>
+                                <img src="../HTML/public/images/omgb1.png" alt="" class="w-50"><br>
+                                <input type="checkbox" id="check1">
+                                <label for="#check1">Click to add</label>
+                            </div>
+                            <div>
+                                <img src="../HTML/public/images/omgb1.png" alt="" class="w-50"><br>
+                                <input type="checkbox" id="check2">
+                                <label for="#check2">Click to add</label>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Modal Now -->
+        </div>
+    </nav>
+    <!-- Functionality code for jQuery -->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

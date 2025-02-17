@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <h2>Shopper.</h2>
+    <nav class="w-50">
+        <button class="btn btn-danger w-100">Home</button>
+        <div class="accordion" id="">
+            <!-- First Accordion Item -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button data-bs-toggle="collapse" data-bs-target="#electronics" class="btn btn-danger w-100">
+                        ELECTRONICS
+                    </button> 
+                </div>
+                <div id="electronics" class="accordion-collapse collapse" data-bs-parent="">
+                    <div class="accordion-body"> 
+                       <ul>
+                        <li>TV</li>
+                        <li>Laptop</li>
+                        <li>AC</li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Second Accordion Item -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button data-bs-toggle="collapse" data-bs-target="#electronics" class="btn btn-danger w-100">
+                        ELECTRONICS
+                    </button> 
+                </div>
+                <div id="electronics" class="accordion-collapse collapse" data-bs-parent="">
+                    <div class="accordion-body"> 
+                       <ul>
+                        <li>TV</li>
+                        <li>Laptop</li>
+                        <li>AC</li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Functionality code for jQuery -->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
