@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
+
 <body class="container-fluid bg-danger">
     <header>
         <img src="../HTML/public/images/kfctop.png" alt="" class="w-100">
@@ -18,37 +20,37 @@
                 <div class="accordion-header">
                     <button data-bs-toggle="collapse" data-bs-target="#electronics" class="btn btn-danger w-100">
                         Customer Details
-                    </button> 
+                    </button>
                 </div>
                 <div id="electronics" class="accordion-collapse collapse" data-bs-parent="#kfc">
-                    <div class="accordion-body"> 
-                       <ul class="list-unstyled">
-                        <li>
-                            <label for="">Customer Name</label><br>
-                            <input type="text" class="form-control">
-                        </li>
-                        <li>
-                            <label for="">Mobile Number</label><br>
-                            <input type="text" class="form-control">
-                        </li>
-                       </ul>
+                    <div class="accordion-body">
+                        <ul class="list-unstyled">
+                            <li>
+                                <label for="">Customer Name</label><br>
+                                <input type="text" class="form-control">
+                            </li>
+                            <li>
+                                <label for="">Mobile Number</label><br>
+                                <input type="text" class="form-control">
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-    
+
             <!-- Second Accordion Item -->
             <div class="accordion-item">
                 <div class="accordion-header">
                     <button data-bs-toggle="collapse" data-bs-target="#electronics1" class="btn btn-danger w-100">
                         Select your Meal
-                    </button> 
+                    </button>
                 </div>
                 <div id="electronics1" class="accordion-collapse collapse" data-bs-parent="#kfc">
-                    <div class="accordion-body w-100"> 
-                       <div class="d-flex flex-row justify-content-around">
-                        <img src="../HTML/public/images/omgb1.png" alt="" class="w-25">
-                        <img src="../HTML/public/images/omgb2.png" alt="" class="w-25">
-                       </div>
+                    <div class="accordion-body w-100">
+                        <div class="d-flex flex-row justify-content-around">
+                            <img src="../HTML/public/images/omgb1.png" alt="" class="w-25">
+                            <img src="../HTML/public/images/omgb2.png" alt="" class="w-25">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -58,32 +60,70 @@
                 <div class="accordion-header">
                     <button data-bs-toggle="collapse" data-bs-target="#electronics3" class="btn btn-danger w-100">
                         Select ADD on's
-                    </button> 
+                    </button>
                 </div>
                 <div id="electronics3" class="accordion-collapse collapse show" data-bs-parent="#kfc">
-                    <div class="accordion-body w-100">
-                        <div class="d-flex flex-row justify-content-between">
+                    <div class="accordion-body w-100 d-flex flex-row justify-content-center">
+                        
                             <div>
                                 <img src="../HTML/public/images/omgb1.png" alt="" class="w-50"><br>
-                                <input type="checkbox" id="check1">
+                                <input type="checkbox" id="check1" class="form-check-input">
                                 <label for="#check1">Click to add</label>
                             </div>
                             <div>
                                 <img src="../HTML/public/images/omgb1.png" alt="" class="w-50"><br>
-                                <input type="checkbox" id="check2">
+                                <input type="checkbox" id="check2" class="form-check-input">
                                 <label for="#check2">Click to add</label>
                             </div>
-                        </div>
-                       
+                        
                     </div>
                 </div>
             </div>
 
-            <!-- Add Modal Now -->
-        </div>
-    </nav>
-    <!-- Functionality code for jQuery -->
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+            <!-- Forth Accordion Item -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <!-- Add Modal Now -->
+                    <!-- Login Trigger Button -->
+                    <button data-bs-toggle="modal" data-bs-target="#electronics4" class="btn btn-danger w-100">
+                        Select your Meal
+                    </button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="electronics4">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header btn btn-info text-white">
+                                <span class="bi bi-person-fill modal-title fs-5">
+                                    User Login
+                                </span>
+                                <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <dl>
+                                    <dt>Username</dt>
+                                    <dd>
+                                        <input type="text" name="userName" class="form-control">
+                                    </dd>
+                                    <dt>Password</dt>
+                                    <dd>
+                                        <input type="password" name="userPwd" class="form-control">
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Login</button>
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Functionality code for jQuery -->
+            <script src="../node_modules/jquery/dist/jquery.js"></script>
+            <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid" background="../HTML/public/images/hotel.png" style="background-size: cover; background-repeat: no-repeat;">
+    <div class="border border-1 border-black p-2 fw-bold m-1 btn btn-info w-100" align="center">
+        Hotel Registration Form
+    </div>
+    <ul class="nav nav-pills mb-3">
+        <li class="nav-item">
+          <button class="nav-link active" id="" data-bs-toggle="pill" data-bs-target="#details" type="button">Customer Info</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="" data-bs-toggle="pill" data-bs-target="#preview" type="button">Select Room Type</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="" data-bs-toggle="pill" data-bs-target="#features" type="button">Select Amenities</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="" data-bs-toggle="pill" data-bs-target="#ratings" type="button">Advance Amount</button>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active p-1" id="details">
+            <div class="d-flex flex-row justify-content-around p-1">
+                <p>Customer Name</p> 
+                <input type="text" class="w-50">
+            </div>
+            <div class="d-flex flex-row justify-content-around p-1">
+                <p>Check in Date</p>
+                <input type="date" class="w-50">
+            </div>
+            <div class="d-flex flex-row justify-content-around p-1">
+                <p>Total No of Days</p> 
+                <input type="number" class="w-50">
+            </div>
+            <div class="d-flex flex-row justify-content-around p-1">
+                <p>Total No of Persons</p>
+                <input type="number" class="w-50" required>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="preview">
+            <div class="d-flex justify-content-around">
+                <div>
+                    <img src="../HTML/public/images/Deluxe Room.jpg" alt="" width="200em" height="150em"><br>
+                    <input type="radio" name="room" id="">
+                    <label for="">Delux Room</label>
+                </div>
+                <div>
+                    <img src="../HTML/public/images/Suite room.jpg" alt="" width="200em" height="150em"><br>
+                    <input type="radio" name="room" id="">
+                    <label for="">Suite Room</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="features">
+            <div class="d-flex justify-content-around">
+                <div>
+                    <img src="../HTML/public/images/AC.avif" alt="" width="200em" height="150em"><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">AC</label>
+                </div>
+                <div>
+                    <img src="../HTML/public/images/locker.jpg" alt="" width="200em" height="150em"><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Locker</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane" align="center" id="ratings">
+            <div class="d-flex justify-content-around">
+                <h6>Advance Amount</h2>
+                <input type="number">
+            </div>
+            <!-- Modal -->
+            <!-- Login Trigger Button -->
+            <button type="button" class="btn btn-success mt-5 w-25" data-bs-toggle="modal" data-bs-target="#login">
+                Register
+            </button>
+                
+            <div class="modal fade" id="login">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header btn btn-warning text-white">
+                            <span>
+                                Summary
+                            </span>
+                        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Customer Name :</p>
+                            <p>Check In Date :</p>
+                            <p>Total No of Days :</p>
+                            <p>Total No of Persons :</p>
+                            <p>Room Type :</p>
+                            <p>Amenities :</p>
+                            <p>Advance Amount :</p>
+                            <p>Balance Amount :</p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Register</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Functionality code for jQuery -->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

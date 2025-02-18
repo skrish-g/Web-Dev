@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <h1 class="mb-3">Flipkart</h1>
+    <ul class="nav nav-pills mb-3">
+        <li class="nav-item">
+          <button class="nav-link active" id="" data-bs-toggle="pill" data-bs-target="#details" type="button">Basic Details</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="" data-bs-toggle="pill" data-bs-target="#preview" type="button">Preview</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="" data-bs-toggle="pill" data-bs-target="#features" type="button">Features</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="" data-bs-toggle="pill" data-bs-target="#ratings" type="button">Ratings</button>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="details">
+            <h4>Realme</h4>
+            <p>iPHONE 35% OFF</p>
+            <span>
+                <span class="bi bi-currency-rupee">75000/-</span>
+            </span>
+        </div>
+
+        <div class="tab-pane" id="preview">
+            <img src="../HTML/public/images/one-plus.webp" alt="" width="200px">
+        </div>
+
+        <div class="tab-pane" id="features">
+            <ul>
+                <li>6 GB RAM | 128 GB ROM | Expandable Upto 2 TB</li>
+                <li>16.94 cm (6.67 inch) Full HD+ Display</li>
+                <li>50MP + 2MP | 16MP Front Camera</li>
+                <li>5000 mAh Battery</li>
+                <li>Dimensity 7050 Processor</li>
+            </ul>
+        </div>
+
+        <div class="tab-pane" id="ratings">
+            4.3 <span class="bi bi-star-fill text-success"></span> Ratings & 5000 Reviews
+        </div>
+    </div>
+
+    <!-- Functionality code for jQuery -->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
