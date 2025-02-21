@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        tbody tr:first-child{
+            color: green;
+        }
+        tbody tr:last-child{
+            color: red;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="table-responsive-lg" style="width: 500px;">
+        <table class="table caption-top table-hover table-striped-columns table-dark">
+            <caption>Asia Cup</caption>
+            <thead>
+                <th>Pos</th>
+                <th>Teams</th>
+                <th>Matches</th>
+                <th>Won</th>
+                <th>Lost</th>
+                <th>Tied</th>
+                <th>NR</th>
+                <th>Points</th>
+                <th>NRR</th>
+                <th>Series Form</th>
+            </thead>
+            <tbody>
+                <tr class="table-active">
+                    <td>1</td>
+                    <td>India</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>+4.99</td>
+                    <td>6</td>
+                    <td>+3.99</td>
+                    <td>
+                        <span class="badge bg-success rounded rounded-circle">W</span>
+                        <span class="badge bg-danger rounded rounded-circle">A</span>
+                        <span class="badge bg-success rounded rounded-circle">W</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pakistan</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>-4.99</td>
+                    <td>0</td>
+                    <td>-3.99</td>
+                    <td>
+                        <span class="badge bg-success rounded rounded-circle">W</span>
+                        <span class="badge bg-warning rounded rounded-circle">L</span>
+                        <span class="badge bg-danger rounded rounded-circle">A</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bangladesh</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>-5.99</td>
+                    <td>0</td>
+                    <td>-3.99</td>
+                    <td>
+                        <span class="badge bg-warning rounded rounded-circle">L</span>
+                        <span class="badge bg-warning rounded rounded-circle">L</span>
+                        <span class="badge bg-warning rounded rounded-circle">L</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
