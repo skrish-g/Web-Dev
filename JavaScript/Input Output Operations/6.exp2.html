@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+
+    <!-- Login Trigger Button -->
+    <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#login">
+        Add Product
+    </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="login">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-dark fw-bold">
+            <span class="modal-title fs-5">
+                Add Product
+            </span>
+          <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <dl>
+            <dt>Name</dt>
+            <dd>
+                <input type="text" name="userName" class="form-control">
+            </dd>
+            <dt>Price</dt>
+            <dd>
+                <input type="password" name="userPwd" class="form-control">
+            </dd>
+            <dt>Shipped To</dt>
+            <dd>
+                <select name="" id="" class="form-control">
+                    <option value="">Select City</option>
+                    <option value="">BGR</option>
+                    <option value="">Pune</option>
+                </select>
+            </dd>
+            <dt>Stock</dt>
+            <dd>
+                <!-- Add checkbox -->
+                <input type="radio" name="userPwd">Available 
+            </dd>
+           </dl>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Register</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Code to provide Functionality -->
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
