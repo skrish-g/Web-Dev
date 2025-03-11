@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        div{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img height="100" width="100" border="1">
+    </div>
+    <div>
+        <form action="">
+            <h2>User Login</h2>
+            Username <input type="text"><br><br>
+            <input type="button">
+        </form>
+    </div>
+    <div>
+        <form action="">
+            Email <input type="text"><br><br>
+            <input type="button">
+        </form>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    // Accessing HTML elements using DOM hierarchy
+    window.document.images[0].src="../../HTML/public/images/one-plus.webp"
+    window.document.images[0].alt="Image not available"
+
+    window.document.forms[0].elements[1].value="Submit"
+    window.document.forms[1].elements[1].value="Login"
+    window.document.forms[0].elements[0].placeholder="Hello"
+</script>
