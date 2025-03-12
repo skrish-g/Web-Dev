@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="text/javascript">
-        
-        function fnCall(){
-            flag = confirm("Please click any options u see");
-            flag ? document.querySelector("h1").textContent="Oye h1" : document.querySelector("p").textContent="Oye p"
-        }
-
-
         // Confirm with alert
         function deleteRecord1(){
             flag=confirm("Do U want to delete?");  // Gives only boolean output
@@ -22,8 +15,6 @@
                 alert("You pressed Cancel button...");
             }
         }
-
-
 
         // Confirm with document.write
         function deleteRecord2(){
@@ -72,7 +63,7 @@
 </head>
 
 <body>
-    <!-- <button onclick="deleteRecord1()">
+    <button onclick="deleteRecord1()">
         Delete Record 1
     </button>  <br><br><br>
 
@@ -96,11 +87,6 @@
         Delete Record 5
     </button>
     <h1></h1>
-    <p></p> -->
-
-    <button onclick="fnCall()">Please Click Here</button>
-    <h1></h1>
     <p></p>
-    <p>Hello</p>
 </body>
 </html>
