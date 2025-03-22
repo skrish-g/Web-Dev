@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        function constVariable(){
+            // console.log(Name)   // ReferenceError ---> Observing Hoisting
+            const userName="sKrish"
+            if (true) {
+                const Name="Krish"
+                console.log(Name)   // Krish --->Observing block scope
+                const userName="skrish236"
+                console.log(userName)   // skrish236 ---> Observing Shadowing
+            }
+            // console.log(Name)   // ReferenceError ---> Observing Function Scope
+
+            document.write("Name= "+name+"<br> Username="+userName +"<br><br>")  // Just Accessing
+        }
+        constVariable()   // Calling the function
+    </script>
+</head>
+<body>
+</body>
+</html>
