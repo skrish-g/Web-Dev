@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style type="text/css">
+        
+    </style>
+ 
+    <script type="text/javascript">
+            function bookTicket() {
+                console.log("Function is triggered...");
+            
+                document.getElementById("displaySummary").style.display = "block";
+                
+                document.getElementById("lblMovie").textContent = document.getElementById("lstMovies").value;
+
+                document.getElementById("lblLocation").textContent = document.getElementById("lstCinemas").value;
+
+                document.getElementById("lblDate").textContent = document.getElementById("lstDates").value;
+                
+                document.getElementById("lblTime").textContent = document.getElementById("lstTimes").value;
+
+                document.getElementById("lblSeats").textContent = document.getElementById("lstOptions").value;
+
+
+                movieName = document.getElementById("lstMovies").value;
+                poster = document.getElementById("poster");
+                screen = "";
+
+                if (movieName === "Max") {
+                    poster.src="../../HTML/public/images/appl1.jpg";
+                    screen = "SCREEN-1";
+                } else {
+                    poster.src="../../HTML/public/images/appl2.jpg";
+                    screen = "SCREEN-2";
+                }
+
+                document.getElementById("lblScreen").textContent=screen;
+            }
+    </script>
+</head>
+<body class="container-fluid">
+
+    
+     <!-- Button trigger modal -->
+     <button type="button" class="btn btn-danger mt-3 w-25" 
+            data-bs-toggle="modal" data-bs-target="#booking">
+        Quick Booking
+     </button>
+     
+     <!-- Modal -->
+     <div class="modal fade" id="booking">
+
+       <div class="modal-dialog modal-fullscreen">
+
+         <div class="modal-content">
+        
+           <!-- Modal Header-->
+           <div class="modal-header">
+             <h3>Quick Booking</h3>
+             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+           </div>
+
+           <!-- Modal Body-->
+           <div class="modal-body">
+             <nav class="d-flex justify-content-between p-1 bg-dark text-light p-2">
+                <div>
+                    <select id="lstMovies" class="form-select">
+                        <option>Select Movie</option>
+                        <option>Max</option>
+                        <option>UI</option>
+                    </select>
+                </div>
+                <div>
+                    <select id="lstCinemas" class="form-select">
+                        <option>Select Cinema</option>
+                        <option>Inox Whitefield</option>
+                        <option>Veeresh</option>
+                    </select>
+                </div>
+                <div>
+                    <select  id="lstDates" class="form-select">
+                        <option>Select Date</option>
+                        <option>Today 27-DEC</option>
+                        <option>Tommo 28-DEC</option>
+                    </select>
+                </div>
+                <div>
+                    <select  id="lstTimes" class="form-select">
+                        <option>Select Time</option>
+                        <option>10.30 AM</option>
+                        <option>6.30 PM</option>
+                    </select>
+                </div>
+                <div>
+                    <select id="lstOptions" class="form-select">
+                        <option>Select Seats</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <div>
+                    <!-- triggering the script upon clicking the button-->
+                    <button class="btn btn-danger" 
+                            data-bs-dismiss="modal"
+                            onclick="bookTicket()">
+                            Book
+                    </button>
+                </div>
+             </nav>
+           </div>
+
+           <!-- Modal Footer-->
+           <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+             <button type="button" class="btn btn-primary">Understood</button>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <!--Used for rendering the output to the user-->
+     <div class="w-25" id="displaySummary" style="display: none;">
+        <h3 class="bg-dark text-white mt-3 p-2">Booking Summary</h3>
+        <dl class="row">
+
+            <img  width="100%" height="250" id="poster">
+
+            <dt class="col-3">Movie</dt>
+            <dd id="lblMovie" class="col-9">  </dd>
+
+            <dt class="col-3">Location</dt>
+            <dd id="lblLocation" class="col-9"> </dd>
+
+            <dt class="col-3">Date</dt>
+            <dd id="lblDate" class="col-9"></dd>
+
+            <dt class="col-3">Time</dt>
+            <dd id="lblTime" class="col-9"></dd>
+
+            <dt class="col-3">Screen</dt>
+            <dd id="lblScreen" class="col-9"></dd>
+
+            <dt class="col-3">Seats</dt>
+            <dd id="lblSeats" class="col-9"></dd>
+
+        </dl>
+        <button class="btn btn-link" data-bs-target="#booking" data-bs-toggle="modal">
+            Modify Booking
+        </button>
+     </div>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style type="text/css">
+        
+    </style>
+
+    <script type="text/javascript">
+            function bookTicket() {
+                console.log("Function is triggered...");
+            
+                document.getElementById("displaySummary").style.display = "block";
+                
+                document.getElementById("lblMovie").textContent = document.getElementById("lstMovies").value;
+
+                document.getElementById("lblLocation").textContent = document.getElementById("lstCinemas").value;
+
+                document.getElementById("lblDate").textContent = document.getElementById("lstDates").value;
+                
+                document.getElementById("lblTime").textContent = document.getElementById("lstTimes").value;
+
+                document.getElementById("lblSeats").textContent = document.getElementById("lstOptions").value;
+
+
+                movieName = document.getElementById("lstMovies").value;
+                poster = document.getElementById("poster");
+                screen = "";
+
+                if (movieName === "Max") {
+                    poster.src="../public/images/max.png";
+                    screen = "SCREEN-1";
+                } else {
+                    poster.src="../public/images/UI.png";
+                    screen = "SCREEN-2";
+                }
+
+                document.getElementById("lblScreen").textContent=screen;
+            }
+    </script>
+</head>
+<body class="container-fluid">
+
+    
+     <!-- Button trigger modal -->
+     <button type="button" class="btn btn-danger mt-3 w-25" 
+            data-bs-toggle="modal" data-bs-target="#booking">
+        Quick Booking
+     </button>
+     
+     <!-- Modal -->
+     <div class="modal fade" id="booking">
+
+       <div class="modal-dialog modal-fullscreen">
+
+         <div class="modal-content">
+        
+           <!-- Modal Header-->
+           <div class="modal-header">
+             <h3>Quick Booking</h3>
+             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+           </div>
+
+           <!-- Modal Body-->
+           <div class="modal-body">
+             <nav class="d-flex justify-content-between p-1 bg-dark text-light p-2">
+                <div>
+                    <select id="lstMovies" class="form-select">
+                        <option>Select Movie</option>
+                        <option>Max</option>
+                        <option>UI</option>
+                    </select>
+                </div>
+                <div>
+                    <select id="lstCinemas" class="form-select">
+                        <option>Select Cinema</option>
+                        <option>Inox Whitefield</option>
+                        <option>Veeresh</option>
+                    </select>
+                </div>
+                <div>
+                    <select  id="lstDates" class="form-select">
+                        <option>Select Date</option>
+                        <option>Today 27-DEC</option>
+                        <option>Tommo 28-DEC</option>
+                    </select>
+                </div>
+                <div>
+                    <select  id="lstTimes" class="form-select">
+                        <option>Select Time</option>
+                        <option>10.30 AM</option>
+                        <option>6.30 PM</option>
+                    </select>
+                </div>
+                <div>
+                    <select id="lstOptions" class="form-select">
+                        <option>Select Seats</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <div>
+                    <!-- triggering the script upon clicking the button-->
+                    <button class="btn btn-danger" 
+                            data-bs-dismiss="modal"
+                            onclick="bookTicket()">
+                            Book
+                    </button>
+                </div>
+             </nav>
+           </div>
+
+           <!-- Modal Footer-->
+           <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+             <button type="button" class="btn btn-primary">Understood</button>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <!--Used for rendering the output to the user-->
+     <div class="w-25" id="displaySummary" style="display: none;">
+        <h3 class="bg-dark text-white mt-3 p-2">Booking Summary</h3>
+        <dl class="row">
+
+            <img  width="100%" height="250" id="poster">
+
+            <dt class="col-3">Movie</dt>
+            <dd id="lblMovie" class="col-9">  </dd>
+
+            <dt class="col-3">Location</dt>
+            <dd id="lblLocation" class="col-9"> </dd>
+
+            <dt class="col-3">Date</dt>
+            <dd id="lblDate" class="col-9"></dd>
+
+            <dt class="col-3">Time</dt>
+            <dd id="lblTime" class="col-9"></dd>
+
+            <dt class="col-3">Screen</dt>
+            <dd id="lblScreen" class="col-9"></dd>
+
+            <dt class="col-3">Seats</dt>
+            <dd id="lblSeats" class="col-9"></dd>
+
+        </dl>
+        <button class="btn btn-link" data-bs-target="#booking" data-bs-toggle="modal">
+            Modify Booking
+        </button>
+     </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html> 

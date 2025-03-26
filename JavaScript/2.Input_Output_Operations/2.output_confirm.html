@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // Confirm with alert
+        function deleteRecord1(){
+            flag=confirm("Do U want to delete?");  // Gives only boolean output
+            
+            if (flag) {
+                alert("Record Deleted Successfully");
+            } else {
+                alert("You pressed Cancel button...");
+            }
+        }
+
+        // Confirm with document.write
+        function deleteRecord2(){
+            flag=confirm("Do U want to delete?");  // Gives only boolean output
+            
+            if (flag) {
+                document.write("<h1 style='color:green; text-align:center;'> Record Deleted Successfully </h1>")
+            } else {
+                document.write("<h1 style='color:red; text-align:center;'> You pressed Cancel </h1>")
+            }
+        }
+
+        // Confirm with outerHTML vs innerHTML
+        function deleteRecord3(){
+            flag=confirm("Do U want to delete?");  // Gives only boolean output
+            
+            if (flag) {
+                document.querySelector("h1").outerHTML="<h3 style='color:green; text-align:center;'> Record Deleted Successfully </h3>"
+            } else {
+                document.querySelector("p").innerHTML="<h3 style='color:red; text-align:center;'> You pressed Cancel </h3>"
+            }
+        }
+
+        // Confirm with outerText vs innerText
+        function deleteRecord4(){
+            flag=confirm("Do U want to delete?");  // Gives only boolean output
+            
+            if (flag) {
+                document.querySelector("h1").outerHTML="<h3 style='color:green; text-align:center;'> Record Deleted Successfully </h3>"
+            } else {
+                document.querySelector("p").innerHTML="<h3 style='color:red; text-align:center;'> You pressed Cancel </h3>"
+            }
+        }
+
+        // Confirm with textContent
+        function deleteRecord5(){
+            flag=confirm("Do U want to delete?");  // Gives only boolean output
+            
+            if (flag) {
+                document.querySelector("h1").outerHTML="<h3 style='color:green; text-align:center;'> Record Deleted Successfully </h3>"
+            } else {
+                document.querySelector("p").innerHTML="<h3 style='color:red; text-align:center;'> You pressed Cancel </h3>"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="deleteRecord1()">
+        Delete Record 1
+    </button>  <br><br><br>
+
+    <button onclick="deleteRecord2()">
+        Delete Record 2
+    </button>  <br><br><br>
+
+    <button onclick="deleteRecord3()">
+        Delete Record 3
+    </button>
+    <h1></h1>
+    <p></p>   <br>
+    
+    <button onclick="deleteRecord4()">
+        Delete Record 4
+    </button>
+    <h1></h1>
+    <p></p>   <br>
+
+    <button onclick="deleteRecord5()">
+        Delete Record 5
+    </button>
+    <h1></h1>
+    <p></p>
+</body>
+</html>

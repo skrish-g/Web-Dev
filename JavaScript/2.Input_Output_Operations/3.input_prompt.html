@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function changeColor(){
+            color=prompt("Enter the color:", "Red | Green | Blue")
+            console.log(color);
+            if (color==null) {
+                document.write("You Entered Cancle button, please refresh the page to re-enter the color")
+            } else if(color=='') {
+                document.querySelector("p").textContent="You entered nothing please refresh and re-enter the correct color name"
+            } else if(color=="Red") {
+                document.getElementById("para").style.cssText="color: red"
+            } else if(color=="Green") {
+                document.getElementById("para").style.cssText="color: green"
+            } else if(color=="Blue") {
+                document.getElementById("para").style.cssText="color: blue"
+            } else {
+                document.getElementById("para").textContent="Please re-enter the valid color"
+            }
+        }
+    </script>
+</head>
+<body>
+    <p onclick="changeColor()" id="para">
+        Hello Users
+    </p>
+</body>
+</html>
