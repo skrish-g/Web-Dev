@@ -1,0 +1,110 @@
+
+
+
+
+
+
+
+
+
+
+---------------Days
+
+Day1 : Need of Web, and Introduction to types of application
+
+Day2 : Explaining the importance of full stack developer and building web and distributed applications
+
+Day3 : Software installation and setting up the system to build webapplications
+
+Day4 : Difference b/w webserver and website and building simple application
+
+Day5 : Types of webpages[static and dynamic], What is HTML and its evolution?
+
+Day6 : Browser Architecture, HTML Parsing and classification of HTML Elements
+
+Day7 : HTML Page Structure(head,title,link)
+
+Day8 : HTML Page Structure(Meta,style,script)
+
+Day9 : Body section(Semantics of HTML5 introduction)
+
+Day10: All headers semantics(aside,footer,header,nav,div,span,fig,figcaption,..)
+
+Day11: Designing a header for a particular website
+ 
+Day12: Designing a footer for a website like flipkart,amazon,myntra ... 
+
+Day13: working with main section area of the project 
+
+Day14: Working with code element,variables,smalltext,largetext,details and summary, working with dl,dt and dd, legend and fieldset
+
+Day15: Headings tag,paragraph tags, blockquotes
+
+Day16: TextFormating : font,fontstyle(bold[strong],italics[em]),fonteffects(underline[ins],strike[del],sup,sub)
+       Ordered List  : <ol><li> and Nesting of ordered list with "Good code".
+
+Day17: Continuation of ol, introduction to ul and pagination concepts.
+
+Day18: Images in html(discussed about the types of images like .png,.jpeg,.....)
+
+Day19: Program on images, followed by designing a cart
+
+Day20: Designing a cards of amazon(important concept)
+
+Day21: links in html(intradocuments link in html: scrollable and non-scrollable content navigation)
+
+Day22: Interdocuments
+
+Day23: Questions of Interdocument and Intradocuments
+
+Day24: youtube code and questions on Intradocument
+
+Day25: Tables in HTML
+
+Day25: Table attributes in HTML
+
+Day26: Sample project using Tables
+
+Day27: Introduction to Forms[POST vs GET]
+
+Day28: Working with <input type='text' ...> and all attributes.
+
+Day29: Working with pattern attributes
+
+Day30: Continuation of pattern attributes with examples of regular expression
+
+Day31: Working with few other types like color,file,email,date,url,password,range,number.
+
+Day32: Radiobuttons,checkbox,checkbox with droplist,DropDown list, ListBox
+
+Day33: TextBox, meter,progress,label,buttons[normal and submit]
+
+Day34: Building real world forms using bootstrap classes for forms.
+
+Day35: Working with bootstrap classes of form[building emi calculator and amazon login form]
+
+Day36: Working with validation of CSS classes.
+
+Day37: MultiMedia Elements[audio,video,embed] and Introduction to CSS(inline,embeded,external)
+
+Day38: 
+
+Day39: 
+
+Day40: Different types of selectors with example
+
+Day41: CSS Selectors continuation and CSS inheritance(inherit,initial,unset)
+
+Day42: Working with CSS Units,CSS Box Model attributes(margin,padding,border,border-image,text-shadow)
+
+Day43: CSS Postion , Z-index in CSS
+
+Day44: CSS Display[none,block,inline,flex]
+
+Day45. CSS Display[flex: wrap],CSS Display[Grid], CSS TextEffects[font-weight,font-size,font-family,font-variant:small-caps]
+
+Day46. CSS Text effects,CSS list-styles, CSS-2D(important)
+
+Day47. CSS-3D, CSS Transition
+
+Day48. Responsive design, media queries,Introduction to Bootstrap
