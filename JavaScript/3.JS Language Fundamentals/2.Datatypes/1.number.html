@@ -10,10 +10,10 @@
 
         var  y = 20;
         var  z = 30;
-        
+
         function f1() {
-            x = 10;
-            document.write(" Inside f1():<br> X = "+x + "<br>" + " Y = "+y +"<br>" + "z ="+z +"<br>");    
+            x = 100;
+            document.write("Inside f1():<br> X = "+x + "<br>" + " Y = "+y +"<br>" + "z ="+z +"<br>");    
         }
         function f2(){
             console.log(x)
@@ -21,6 +21,31 @@
 
         f1();
         f2();
+
+        // Eg:-
+        console.log(0.1+0.2);    // 0.30000000000000004
+        console.log((0.1 + 0.2).toFixed(2)); // 0.30
+
+        // Eg:-
+        let a = 9007199254740991;  
+        let b = 9007199254740992;  
+        let c = 9007199254740993; 
+
+        console.log(a === a + 1);  // false
+        console.log(c === c + 1);  // true (precession lost)
+
+        // Eg:-
+        // Solution
+        let d = 9007199254740993n; 
+        console.log(d === d + 1n);  // false (no precession loss, bcoz of bigint)
+        console.log(typeof d)  // bigint
+
+        // Eg:-
+        console.log(Number.MAX_VALUE);  // not needed (1.7976931348623157e+308)
+        console.log(Number.MIN_VALUE);  // not needed (5e-324)
+
+        console.log(Number.MAX_SAFE_INTEGER);   // 9007199254740991
+        console.log(Number.MIN_SAFE_INTEGER);  // -9007199254740991
     </script>
 
 </head>
