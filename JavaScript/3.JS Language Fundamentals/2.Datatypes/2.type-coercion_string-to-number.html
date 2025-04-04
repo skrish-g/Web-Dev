@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="strToNum()">Number()</button> <br><br>
+    <button onclick="parseint()">ParseInt()</button> <br><br>
+    <button onclick="isnan()">isNaN()</button> <br><br>
+    <button onclick="numIsNaN()">Number.isNaN()</button>
+
+    <script type="text/javascript">
+
+        // string to number conversion
+        function strToNum(){
+            var input=prompt("Enter a number: ")
+            console.log(typeof input)   // string
+
+            num=Number(input)
+            console.log(typeof num)   // number
+            console.log(num)   // if 45.5 ---> 45.5
+        }
+
+        function parseint(){
+            var input=prompt("Enter a number: ")
+            console.log(typeof input)  // string
+
+            p_int=parseInt(input)
+            console.log(typeof p_int)  // integer number
+            console.log(p_int)   // if 45.5 ---> 45
+        }
+
+        function isnan(){
+            var input=prompt("Enter a number: ")
+            console.log(input);
+
+            console.log(isNaN(input))  // boolean
+        }
+
+        function numIsNaN(){
+            var input=prompt("Enter a number: ")
+            console.log(input);
+
+            console.log(Number.isNaN(input))  // always false, since prompt can never give NaN
+            console.log(Number.isNaN(NaN))   // always true
+        }
+    </script>
+</body>
+</html>
