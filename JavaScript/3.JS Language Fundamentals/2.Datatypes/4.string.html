@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="info()">Click here</button>
+
+    <script type="text/javascript">
+        str="Krish"
+        console.log(str, typeof str)  // string
+        str1=new String("Krish")
+        console.log(str1, typeof str1)  // object
+
+        str2="sachin";
+        console.log(str2)
+        str2[0]='S'     // ignored by JS Engine
+        console.log(str2)   // hence string is immutable, i.e., structure can't be changed
+
+        str2="Kohli"
+        console.log(str2)  // Kohli   ---> but value can be changed
+
+        console.log(str2.length)  // autoboxing ---> primitive datatype showing some properties of non-primitive object automatically,
+                                  //                    bcoz primitive string (primitive) datatype does not have property of length
+        
+        arr=[1,'e',3,'f',4,'d','s']
+        console.log(arr)
+
+        arr[2]="Krish"
+        console.log(arr, typeof arr)
+
+        // Difference b/w '==' and '==='
+        console.log(str==str1)   // true,  bcoz it compares values only
+        console.log(str===str1)   // false, bcoz it compares values as well as datatype also
+
+        function info(){
+            userName=prompt("Enter your name: ")
+            age= prompt("Enter your age: ")
+
+            NAME=userName.toUpperCase()   // converts all lower case characters into upper case characters
+            console.log(NAME)
+
+            document.write("Hello <span style='color:red;'>"+NAME+"</span> Your age is: "+age+"<br>")  // Use of double quotes
+            document.write('Hello <span style="color:red;">'+NAME+'</span> Your age is: '+age+'<br>')  // Use of single quotes
+            document.write(`Hello <span style="color:red">${NAME}</span> your age is: ${age}`)        // Use of backtick
+        }
+    </script>
+</body>
+</html>
