@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript">
+        label=prompt("Enter the label: ");
+        username=prompt("Enter the username: ");
+        inputInfo=prompt("Enter the input type: ");
+        buttonInfo=prompt("Enter the button value: ");
+        htmlPage =`
+        <h2 class="text-success">${label}</h2>
+        <dl>
+            <dt>${username}</dt><br>
+            <dd>
+                <input type="${inputInfo}">
+            </dd>
+            <button>${buttonInfo}</button>
+        </dl>
+        `
+        document.write(htmlPage);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
