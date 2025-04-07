@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        /* .success{
+            color: green;
+            font-size: 25px;
+        }
+        .failure{
+            color: red;
+            font-size: 25px;
+        } */
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>Enter OTP</dt>
+        <dd><input type="text" name="" id="textOTP" onblur="validateOTP()"></dd>
+        <p id="info"></p>
+    </dl>
+
+    <script type="text/javascript">
+        function validateOTP(){
+            // Target
+            let otp=document.getElementById("textOTP");
+            let info=document.getElementById("info")
+
+            // Collect
+            otpResult=otp.value
+
+            // Validate & Print
+            condition= otpResult==="3456"
+            if (condition) {
+                console.log("Yes")
+                info.outerHTML="OTP Valid".fontcolor("green").fontsize(20).bold().italics();   // Method Chaining, Approach 2:- to apply styling 
+
+                // // Approach 1:- style binding
+                // info.className="success"
+            } else {
+                console.log("No")
+                info.outerHTML="OTP Invalid".fontsize("20").fontcolor("red").bold().italics();
+
+                // // style binding
+                // info.className="failure"
+            }
+        }
+    </script>
+</body>
+</html>
